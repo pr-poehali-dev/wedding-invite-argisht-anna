@@ -33,21 +33,21 @@ export function About() {
 
           <FadeIn delay={0.2} className="flex flex-col gap-8">
             <div>
-              <p className="font-cormorant italic text-amber-700 text-2xl mb-3">Аргишт</p>
+              <p className="font-cormorant italic text-amber-700 text-2xl mb-3">Как всё началось</p>
               <p className="font-golos text-stone-500 leading-relaxed text-base">
-                Человек, который умеет находить красоту в простых вещах. Его улыбка — первое, что замечаешь, и последнее, что хочется забыть.
+                Семь лет назад на репетиции КВНа двое оказались в одной команде. Смех, импровизация, общие шутки — именно там они впервые по-настоящему заметили друг друга.
               </p>
             </div>
             <div className="w-12 h-px bg-amber-300/60" />
             <div>
-              <p className="font-cormorant italic text-amber-700 text-2xl mb-3">Анна</p>
+              <p className="font-cormorant italic text-amber-700 text-2xl mb-3">Два года ожидания</p>
               <p className="font-golos text-stone-500 leading-relaxed text-base">
-                Та, что наполняет любое пространство теплом и светом. Рядом с ней мир становится чуть добрее и интереснее.
+                Дружба, репетиции, совместные выступления — и всё это время чувство росло. Спустя два года они наконец решились сказать главное. И это стало лучшей импровизацией в их жизни.
               </p>
             </div>
             <div className="w-12 h-px bg-amber-300/60" />
             <p className="font-cormorant font-light text-stone-600 text-xl italic leading-relaxed">
-              «Любовь — это не то, что ты находишь. Любовь — это то, что тебя находит.»
+              «Лучшие истории начинаются не по сценарию.»
             </p>
           </FadeIn>
         </div>
