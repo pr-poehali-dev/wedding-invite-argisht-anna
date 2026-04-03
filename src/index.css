@@ -97,5 +97,10 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Golos Text", sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
