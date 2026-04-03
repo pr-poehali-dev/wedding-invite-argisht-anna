@@ -264,10 +264,9 @@ function About() {
               }}
             >
               <img
-                src="https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/files/673161ed-d560-48c5-9366-d2210788d6f2.jpg"
+                src="https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/bucket/41ee5c64-8db3-423f-8ace-8a504025d55a.jpg"
                 alt="Аргишт и Анна"
-                className="w-full h-full object-cover"
-                style={{ mixBlendMode: "multiply", opacity: 0.85 }}
+                className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 to-transparent" />
             </div>
@@ -404,10 +403,10 @@ function Schedule() {
 
 function Gallery() {
   const images = [
-    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/files/673161ed-d560-48c5-9366-d2210788d6f2.jpg", ratio: "aspect-[3/4]" },
-    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/files/673161ed-d560-48c5-9366-d2210788d6f2.jpg", ratio: "aspect-square" },
-    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/files/673161ed-d560-48c5-9366-d2210788d6f2.jpg", ratio: "aspect-[4/3]" },
-    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/files/673161ed-d560-48c5-9366-d2210788d6f2.jpg", ratio: "aspect-[3/4]" },
+    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/bucket/41ee5c64-8db3-423f-8ace-8a504025d55a.jpg", ratio: "aspect-[3/4]" },
+    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/bucket/41ee5c64-8db3-423f-8ace-8a504025d55a.jpg", ratio: "aspect-square" },
+    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/bucket/41ee5c64-8db3-423f-8ace-8a504025d55a.jpg", ratio: "aspect-[4/3]" },
+    { url: "https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/bucket/41ee5c64-8db3-423f-8ace-8a504025d55a.jpg", ratio: "aspect-[3/4]" },
   ];
 
   return (
