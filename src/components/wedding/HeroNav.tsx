@@ -94,7 +94,7 @@ export function Hero() {
         src="https://cdn.poehali.dev/projects/d9dd51c4-bb1e-411e-99a5-212baefad47d/bucket/28aab6ec-8f24-46d8-9efe-609830db0715.jpg"
         alt="Аргишт и Анна"
         className="absolute inset-0 w-full h-full object-cover object-center"
-        style={{ filter: "blur(6px)", transform: "scale(1.05)" }}
+        style={{ filter: "none" }}
       />
 
       {/* Затемнение */}
