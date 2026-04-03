@@ -31,25 +31,30 @@ export function Nav() {
     <nav
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
       style={{
-        background: scrolled ? "rgba(252, 249, 243, 0.96)" : "transparent",
+        background: scrolled ? "rgba(10, 10, 10, 0.96)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
-        borderBottom: scrolled ? "1px solid rgba(180, 155, 120, 0.2)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(184, 151, 58, 0.2)" : "none",
       }}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`font-cormorant text-xl tracking-widest transition-colors ${scrolled ? "text-stone-700 hover:text-amber-800" : "text-white/80 hover:text-white"}`}
+          className={`font-cormorant text-xl tracking-widest transition-colors ${scrolled ? "hover:text-white" : "text-white/80 hover:text-white"}`}
+          style={scrolled ? { color: "#c9a84c" } : {}}
         >
           А&nbsp;&amp;&nbsp;А
         </button>
 
-        <ul className={`hidden md:flex gap-8 font-golos text-sm tracking-widest uppercase ${scrolled ? "text-stone-500" : "text-white/60"}`}>
+        <ul className={`hidden md:flex gap-8 font-golos text-sm tracking-widest uppercase ${scrolled ? "" : "text-white/60"}`}
+          style={scrolled ? { color: "#666" } : {}}>
           {NAV_LINKS.map((l) => (
             <li key={l.href}>
               <button
                 onClick={() => handleLink(l.href)}
-                className="hover:text-amber-400 transition-colors"
+                className="transition-colors"
+                style={{ color: "inherit" }}
+                onMouseEnter={e => (e.currentTarget.style.color = "#c9a84c")}
+                onMouseLeave={e => (e.currentTarget.style.color = "")}
               >
                 {l.label}
               </button>
@@ -127,8 +132,8 @@ export function Hero() {
         </h1>
 
         <p
-          className="font-cormorant italic text-amber-300/80 text-4xl md:text-5xl my-2"
-          style={{ opacity: loaded ? 1 : 0, transition: "opacity 1s ease 0.7s" }}
+          className="font-cormorant italic text-4xl md:text-5xl my-2"
+          style={{ color: "#b8973a99", opacity: loaded ? 1 : 0, transition: "opacity 1s ease 0.7s" }}
         >
           &amp;
         </p>
@@ -147,8 +152,8 @@ export function Hero() {
         </h1>
 
         <div
-          className="w-20 h-px bg-amber-300/50 mx-auto my-8"
-          style={{ opacity: loaded ? 1 : 0, transition: "opacity 1s ease 1.1s" }}
+          className="w-20 h-px mx-auto my-8"
+          style={{ opacity: loaded ? 1 : 0, transition: "opacity 1s ease 1.1s", background: "#b8973a60" }}
         />
 
         <p
@@ -183,8 +188,10 @@ export function Hero() {
 
         <button
           onClick={() => document.querySelector("#rsvp")?.scrollIntoView({ behavior: "smooth" })}
-          className="px-10 py-3 border border-white/30 text-white font-golos text-sm tracking-widest uppercase hover:bg-white hover:text-stone-800 transition-all duration-300"
-          style={{ opacity: loaded ? 1 : 0, transition: "opacity 1s ease 1.7s" }}
+          className="px-10 py-3 font-golos text-sm tracking-widest uppercase transition-all duration-300"
+          style={{ opacity: loaded ? 1 : 0, transition: "opacity 1s ease 1.7s", border: "1px solid #b8973a60", color: "#c9a84c" }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#b8973a"; (e.currentTarget as HTMLElement).style.color = "#0e0e0e"; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "transparent"; (e.currentTarget as HTMLElement).style.color = "#c9a84c"; }}
         >
           Подтвердить участие
         </button>
